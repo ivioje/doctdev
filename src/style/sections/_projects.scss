@@ -10,7 +10,7 @@
   }
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -75,4 +75,41 @@
       }
     }
   }
+}
+
+/* post */
+#blog {
+  margin-top: -10rem;
+}
+#posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6rem;
+  margin-bottom: 8rem;
+  margin-top: -5rem;
+
+  @include respond(phone) {
+  margin-bottom: 4rem;
+}
+
+& .post_cards {
+padding: 2rem;
+}
+&-title {
+  font-weight: bold;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+}
+& .text {
+  font-size: 13px;
+  color: $dark-blue-text;
+}
+
+
 }
